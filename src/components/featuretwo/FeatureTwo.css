@@ -1,0 +1,47 @@
+.feature-two {
+    padding-top: 75px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.feature-two a:nth-child(n+4) {
+    padding-top: 50px;
+}
+
+.feature-two a {
+    width: calc(100%/3);
+    display: block;
+    display: flex;
+    justify-content: center;
+}
+
+.feature-two-img {
+    background-color: white;
+    border-radius: 50%;
+    height: 220px;
+    width: 220px;
+}
+
+@media (max-width: 1024px) { 
+
+    .feature-two a {
+        width: calc(100%/2);
+    }
+
+    .feature-two a:nth-child(n+3) {
+        padding-top: 50px;
+    }
+
+}
+
+@media (max-width: 768px) { 
+
+    .feature-two a {
+        width: 100%;
+    }
+
+    .feature-two a:nth-child(n+1) {
+        padding-top: 50px;
+    }
+
+}

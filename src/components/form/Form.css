@@ -1,0 +1,64 @@
+.form-container {
+    background-color: #D0F5EE;
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    padding: 40px;
+}
+
+.form-container legend {
+    color: #266CEF;
+    font-size: 30px;
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.form-container button {
+    font-family: "Roboto Mono", monospace;
+}
+
+.form-container label,
+.form-container .secondary-link {
+    font-family: "Work Sans", sans-serif;
+}
+
+.form-container .secondary-link {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.form-container input[type="search"] {
+    border: 1px solid #73C6CD;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+
+.form-container label {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.form-container button {
+    font-size: 20px;
+    background-image: linear-gradient(to bottom, #B3DE21, #73C6CD);
+    color: white;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    display: inline-block;
+    border-radius: 25px;
+    padding: 15px 0px;
+    text-align: center;
+}
+
+@media (max-width: 1280px) { 
+    
+    .form-container {
+        width: calc(100% - 140px);
+    }
+
+}

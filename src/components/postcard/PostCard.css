@@ -1,0 +1,97 @@
+.post-card-container {
+    background-color: white;
+    width: calc(100% - 160px);
+    border-radius: 15px;
+    margin: 0px 50px 0px 50px;
+    display: flex;
+    padding: 30px;
+    position: relative;
+}
+
+.post-card-container p,
+.post-card-container a {
+    font-size: 18px;
+}
+
+.post-card-svg-container,
+.post-card-svg-container svg {
+    height: 40px !important; 
+    width: 40px !important;
+}
+
+.post-card-img {
+    border-radius: 15px;
+    background-color: #D9D9D9;
+    height: 220px;
+    width: 220px;
+    margin-right: 30px;
+}
+
+.post-card-link-container a {
+    display: flex;
+    align-items: center;
+}
+
+.post-card-link-container span {
+    padding-right: 15px;
+}
+
+.post-card-inside-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+
+.first-post-card {
+    margin-top: 50px;
+}
+
+.post-card-link-container {
+    display: flex;
+}
+
+.post-card-inside-container p {
+    margin: 0px;
+}
+
+.save-btn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.save-btn svg {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.saved-btn svg {
+    fill: black !important;
+}
+
+@media (max-width: 1024px) { 
+    .post-card-container {
+        flex-direction: column;
+    }
+
+    .post-card-img {
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+
+    .post-card-inside-container {
+        padding: 0px;
+    }
+
+    .post-card-inside-container p {
+        padding-bottom: 20px;
+    }
+
+    .save-btn {
+        display: none;
+    }
+    
+}

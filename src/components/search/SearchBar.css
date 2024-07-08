@@ -1,0 +1,179 @@
+.search-bar {
+    padding: 0px 50px 0px 50px;
+    position: relative;
+}
+
+.search-bar label,
+.search-bar legend {
+    font-family: "Roboto Mono", monospace;
+    font-size: 20px;
+}
+
+.search-bar legend {
+    color: #266CEF;
+}
+
+.search-bar label,
+.search-bar input::placeholder {
+    font-family: "Roboto Mono", monospace;
+}
+
+.search-bar input::placeholder {
+    color: black;
+    padding-left: 0px;
+}
+
+.search-bar input[type="search"] {
+    border: 1px solid #73C6CD;
+    padding: 20px 20px 20px 75px;
+    border-radius: 5px;
+}
+
+.search-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.search-input-container input {
+    width: 100%;
+}
+
+.search-input-container {
+    position: relative;
+}
+
+.search-input-container svg {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY( -50% );
+}
+
+.filter-form {
+    background-color: white;
+    position: absolute;
+    z-index: 10;
+    top: 125px;
+    width: 300px;
+    border-radius: 25px;
+    padding: 20px 25px;
+    margin-bottom: 50px;
+}
+
+.filter-btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY( -50% );
+    height: 50px;
+    width: 50px;
+}
+
+.filter-form fieldset:nth-child( n + 2 ) {
+    margin-top: 10px;
+}
+
+.search-bar legend {
+    margin-bottom: 10px;
+}
+
+.search-bar .family-filter-container,
+.search-bar .default-filter-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.filter-container.green-btn {
+    background-image: linear-gradient(to bottom, #B3DE21, #73C6CD);
+    color: white;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    display: inline-block;
+    border-radius: 25px;
+    padding: 5px 0px;
+    text-align: center;
+    width: calc(50% - 10px);
+}
+
+.filter-container.transparent-btn {
+    display: inline-block;
+    display: flex;
+    text-align: left;
+    width: calc(50% - 10px);
+}
+
+.family-filter-container div:nth-child(odd),
+.default-filter-container div:nth-child(odd){
+    margin-right: 10px;
+}
+
+.family-filter-container div:nth-child(even),
+.default-filter-container div:nth-child(even){
+    margin-left: 10px;
+}
+
+.family-filter-container div:nth-child(n+3),
+.default-filter-container div:nth-child(n+3){
+    margin-top: 10px;
+}
+
+.search-bar .green-btn input[type="radio"] {
+    visibility:hidden;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+}
+
+.search-bar .green-btn:has(input[type="radio"]:checked) {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: white;
+}
+
+.search-bar label {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.main-label {
+    color: #266CEF;
+    padding-bottom: 10px;
+    font-size: 30px !important;
+}
+
+@media (max-width: 1024px) { 
+
+    .filter-container.transparent-btn,
+    .filter-container.green-btn {
+        width: 100%;
+    }
+    .family-filter-container div:nth-child(even),
+    .default-filter-container div:nth-child(even),
+    .family-filter-container div:nth-child(n+3), 
+    .default-filter-container div:nth-child(n+3),
+    .family-filter-container div:nth-child(odd), 
+    .default-filter-container div:nth-child(odd){
+        margin: 0px;
+    }
+
+    .family-filter-container div:not(:last-child),
+    .default-filter-container div:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    .filter-form {
+        position: static;
+        width: 100%;
+        margin-top: 25px;
+        padding: 25px 0px;
+    }
+
+    .filter-form fieldset {
+        padding: 0px 20px;
+    }
+
+    .filter-form legend {
+        display: block;
+    }
+
+}

@@ -1,0 +1,36 @@
+.project-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    margin-right: 20px;
+}
+
+.project-profile-img { 
+    border-radius: 50%;
+    background-color: #D9D9D9;
+    height: 50px;
+    width: 50px;
+    margin-right: 20px;
+}
+
+.upper-project-card-container {
+    display: flex;
+}
+
+.project-profile-text {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-profile-text p {
+    margin: 0px;
+}
+
+.project-img {
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    height: 150px;
+    margin-top: 20px;
+}

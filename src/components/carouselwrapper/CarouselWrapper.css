@@ -1,0 +1,53 @@
+.carousel-wrapper {
+    margin: 0px 0px 0px 50px;
+    position: relative;
+    padding-top: 100px;
+}
+
+.react-multi-carousel-list {
+    position: relative;
+}
+
+.react-multiple-carousel__arrow {
+    display: none;
+}
+
+.carousel-button-group {
+    position: absolute;
+    top: 25px;
+    right: 50px;
+    z-index: 10;
+}
+
+.carousel-wrapper h2 {
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    font-family: "Roboto Mono", monospace;
+    color: #266CEF;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.react-multi-carousel-dot-list {
+    display: none;
+}
+
+@media (max-width: 1024px) { 
+    .project-card {
+        margin-right: 50px !important;
+    }
+}
+
+@media (max-width: 640px) { 
+
+    .carousel-button-group {
+        display: none;
+    }
+
+    .react-multi-carousel-dot-list {
+        display: flex;
+        right: 40px;
+        bottom: 0px;
+    }
+}
